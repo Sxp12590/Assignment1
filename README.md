@@ -18,6 +18,7 @@ Firstly I created a random tensor of shape(4,6) with tf.random.uniform function 
 **TASK2** 
 2.	Loss Functions & Hyperparameter Tuning
 Code is present in Lossfunctions.py and output is also shown in pynb file.
+
 This task is to perform  
 - Computations on Mean Squared Error (MSE) and Categorical Cross-Entropy (CCE) losses.
 -  how modifying predictions affects the loss values.
@@ -37,6 +38,7 @@ This task is to perform
 **TASK3**
 3.	Train a Model with Different Optimizers
 Code is present in AdamVsGSD.py and output is also shown in pynb file.
+
 This taks is to train a neural network on the MNIST dataset using different loss functions and optimizers. The goal is to compare how the optimizers Adam and SGD perform with sparse_categorical_crossentropy and categorical_crossentropy loss functions.
 Firstly load and preprocess the mnist dataset.
 - load the data and normailze the data from (0-255) to (0-1) range.
@@ -55,6 +57,19 @@ From the results what I observe is
 
 **TASK4**
 4.	Train a Neural Network and Log to TensorBoard
+The task is to train neural network model and visualize it with tensor board.
+
+Firstly load and preprocess the mnist dataset.
+- load the data and normailze the data from (0-255) to (0-1) range.
+Then define a simple model using keras and then compile the model.
+Next define the tensorboard log directly and train the model with tensor board.
+
+1.	What patterns do you observe in the training and validation accuracy curves?
+- Training accuracy increases faster, while validation accuracy may plateau or decline due to overfitting.
+3.	How can you use TensorBoard to detect overfitting?
+- If validation loss starts increasing while training loss keeps decreasing, overfitting is occurring.
+5.	What happens when you increase the number of epochs?
+- Increasing epochs can lead to better performance initially, but excessive training may cause overfitting.
 
   
    
