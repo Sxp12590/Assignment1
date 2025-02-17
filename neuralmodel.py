@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1APYqASi1TYeGmY_Ju-TILweC2mreQdr7
 """
 
-# Commented out IPython magic to ensure Python compatibility.
-# %load_ext tensorboard
+
+%load_ext tensorboard
 
 import tensorflow as tf
 import datetime
@@ -40,6 +40,5 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram
 # Train model with TensorBoard
 model.fit(x_train, y_train, epochs=5, validation_data=(x_test, y_test), callbacks=[tensorboard_callback])
 
-# Commented out IPython magic to ensure Python compatibility.
-# %tensorboard --logdir logs/fit
+%tensorboard --logdir logs/fit
 
